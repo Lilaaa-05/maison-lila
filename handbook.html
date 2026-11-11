@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff8f5"><meta name="description" content="认识小小约克夏 Lila：一份关于日常、玩耍、散步与好好吃饭的可爱生活指南。">
+<title>The Lila Handbook — Maison Lila</title><link rel="icon" href="pic/logo.PNG"><link rel="stylesheet" href="handbook.css"><script src="app.js" defer></script><script src="quiz.js" defer></script>
+</head>
+<body><a class="back-to-maison" href="index.html">← MAISON LILA · 回到品牌首页</a>
+<a class="skip-link" href="#guide">跳到生活指南</a>
+<div class="container">
+    <header class="topbar"><a class="brand" href="#intro" aria-label="Lila 首页"><img src="pic/logo.PNG" alt="" width="42" height="42"><span>lila<span class="brand-dot">.</span></span><span class="brand-caption">小狗的生活提案</span></a><span class="topbar-note"><span class="status-dot"></span> A LITTLE DOG, A LOT OF LOVE</span><a class="topbar-link" href="#guide">翻开生活指南 <span>↗</span></a></header>
+    <main>
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy"><div class="eyebrow"><span class="tiny-star">♡</span> WELCOME TO MY HAPPY LITTLE WORLD</div><h1 id="hero-title">今天也要<br><span class="title-oval">可爱<span aria-hidden="true">✧</span></span>一下！</h1><p>嗨，我是 Lila！一只有点胆小、很爱玩耍的约克夏。<br>欢迎翻开我的生活指南，一起把小日子过得毛茸茸。</p><div class="hero-actions"><button class="primary-btn" data-go="intro">认识一下我 <span>↗</span></button><button class="text-btn" data-go="schedule">看看我的一天 <span>→</span></button></div><div class="hero-footnote"><span class="mini-paw">🐾</span><span>吃好 · 睡好 · 玩好 · 被好好爱着</span></div></div>
+        <div class="hero-visual"><span class="photo-spark" aria-hidden="true">✳</span><figure class="portrait"><img src="pic/1.JPG" alt="穿着蓝色小裙子的约克夏 Lila 抬头看着你" fetchpriority="high" width="4032" height="3024"><figcaption><span>a good day with Lila ♡</span><span>♡</span></figcaption></figure><div class="photo-sticker"><span>hi!</span>我是 Lila</div><span class="photo-caption">YOUR NEW LITTLE BESTIE ↗</span></div>
+    </section>
+    <div class="love-strip"><span>SMALL PAWS, BIG PERSONALITY</span><span aria-hidden="true">✳</span><span>生活的可爱，都藏在小事里</span><span aria-hidden="true">✳</span><span>EAT. PLAY. SLEEP. REPEAT.</span></div>
+    <section class="guide" id="guide" aria-label="Lila 生活指南">
+    <div class="guide-top"><div><span class="eyebrow">LILA'S EVERYDAY</span><h2>我的生活使用说明<span>✿</span></h2></div><p>一点小习惯，一本读懂我。</p></div>
+    <nav class="nav-container" role="tablist" aria-label="生活指南栏目"><button class="nav-btn active" id="tab-intro" role="tab" aria-selected="true" aria-controls="intro" tabindex="0" data-module="intro"><span class="nav-icon" aria-hidden="true">♡</span><span>认识 Lila</span><small>01</small></button><button class="nav-btn" id="tab-schedule" role="tab" aria-selected="false" aria-controls="schedule" tabindex="-1" data-module="schedule"><span class="nav-icon" aria-hidden="true">◷</span><span>典型的一天</span><small>02</small></button><button class="nav-btn" id="tab-tips" role="tab" aria-selected="false" aria-controls="tips" tabindex="-1" data-module="tips"><span class="nav-icon" aria-hidden="true">✧</span><span>相处小秘诀</span><small>03</small></button><button class="nav-btn" id="tab-walk" role="tab" aria-selected="false" aria-controls="walk" tabindex="-1" data-module="walk"><span class="nav-icon" aria-hidden="true">♧</span><span>散步指南</span><small>04</small></button><button class="nav-btn" id="tab-diet" role="tab" aria-selected="false" aria-controls="diet" tabindex="-1" data-module="diet"><span class="nav-icon" aria-hidden="true">◡</span><span>好好吃饭</span><small>05</small></button><button class="nav-btn" id="tab-notes" role="tab" aria-selected="false" aria-controls="notes" tabindex="-1" data-module="notes"><span class="nav-icon" aria-hidden="true">▤</span><span>照护备忘</span><small>06</small></button><button class="nav-btn" id="tab-exam" role="tab" aria-selected="false" aria-controls="exam" tabindex="-1" data-module="exam"><span class="nav-icon" aria-hidden="true">☆</span><span>Lila 认定考试</span><small>07</small></button></nav>
+        <section class="module active" id="intro" role="tabpanel" aria-labelledby="tab-intro">
+            <div class="section-heading"><div><span class="eyebrow">NICE TO MEET YOU</span><h2>认识一下，这位小朋友</h2></div><span class="section-index">01 / 07</span></div>
+            <div class="profile-grid">
+                <article class="identity-card">
+                    <span class="card-label">LILA'S ID CARD</span><span class="id-flower" aria-hidden="true">✿</span>
+                    <h3>Lila <span>莉拉</span></h3><p class="identity-sub">小小约克夏，大大个性。</p>
+                    <dl><div><dt>生日</dt><dd>2022.05.25 <span id="age"></span></dd></div><div><dt>星座</dt><dd>双子座 ♊</dd></div><div><dt>MBTI</dt><dd>ISFP-A · 小小艺术家</dd></div><div><dt>出生地</dt><dd>神奈川県茅ヶ崎市</dd></div></dl>
+                    <div class="family-note">🏆 冠军家族的小公主<span>曾外祖父 Keisuke 曾获日本犬舍比赛冠军</span></div>
+                </article>
+                <article class="personality-card"><span class="card-label">A LITTLE ABOUT ME</span><h3>我的可爱，有迹可循。</h3><p>喜欢人类，喜欢玩具，<br>也喜欢有人陪着的每一天。</p><div class="personality-tags"><span>♡ 亲人小甜豆</span><span>不乱叫</span><span>不抢东西吃</span><span>有一点胆小</span><span>不喜欢狗狗</span><span>游戏急性子</span></div><div class="handwritten">please be gentle with me ♡</div></article>
+            </div>
+            <article class="language-card"><div><span class="card-label">LET'S TALK</span><h3>和我说说话</h3><p>我是一只多语言小狗。</p></div><div class="language-details">
+                <p><strong><span>中</span> 中文</strong>习惯听中文，除了“喂”和“1，2，3”，不会对其他口令做出反应。</p>
+                <p><strong><span>EN</span> 英语 · 主要口令</strong>No!!, Wait, Go, Sit, Down, Shake, Toilet, House（以前在笼子里吃饭，现在放碗的地方就是 house）。</p>
+                <p><strong><span>あ</span> 日语</strong>懂「ありがとうございます」。会议结束时听到这句，就知道可以找人互动了；寄宿宠物酒店时可能也学过一点。</p>
+            </div></article>
+        </section>
+
+        <!-- 日程模块 -->
+        <div class="module" id="schedule" role="tabpanel" aria-labelledby="tab-schedule" hidden><div class="section-heading"><div><span class="eyebrow">THE LITTLE LILA HANDBOOK</span><h2>Lila典型的一天</h2></div><span class="section-index">02 / 07</span></div>
+            <div class="module-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>时间段</th>
+                            <th>主要活动</th>
+                            <th>备注</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7点左右</td>
+                            <td>一觉醒来，鉴于主人还在睡觉，先安静躺着观察一下</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>8点左右</td>
+                            <td>开始盯着主人何时起床，觉得用意念能够唤醒主人。偶尔觉得意念不成功会叹气</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>8:30</td>
+                            <td>闹钟响起，冲到主人旁边叫主人快点起床别躺着</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>8:30-8:50</td>
+                            <td>要求主人一起玩20分钟。扔玩具、拔河。最后吃饭</td>
+                            <td>吃饭：2勺粮食，加鸡肉干2-3块碾碎</td>
+                        </tr>
+                        <tr>
+                            <td>9点左右</td>
+                            <td>吃完饭拉屎</td>
+                            <td>一般这个时间不拉屎就不知道什么时候拉。（也许午餐小零食或者晚饭之后）</td>
+                        </tr>
+                        <tr>
+                            <td>9：00-12：00</td>
+                            <td>开始会小憩一下，快到11点左右会走来走去，盯着主人，觉得主人怎么上那么久班</td>
+                            <td>期间会叫主人抱一下顺便帮她按摩，有空就满足她需求，没空说No！</td>
+                        </tr>
+                        <tr>
+                            <td>12:00-12:20</td>
+                            <td>第二次玩，要求主人一起玩20分钟。扔玩具、拔河。玩完给零食</td>
+                            <td>吃之前要锻炼口令：Sit、Down。零食：一般一个口香糖加3块左右小零食</td>
+                        </tr>
+                        <tr>
+                            <td>12:20-18:00</td>
+                            <td>14点前是浅睡眠，14点后开始大睡特睡</td>
+                            <td>有时候睡到19点</td>
+                        </tr>
+                        <tr>
+                            <td>18点左右</td>
+                            <td>开始走来走去。盯着主人上班</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>18:00-21:00</td>
+                            <td>如果主人去健身外出买菜的话，她就继续选择睡觉</td>
+                            <td>如果不去的话会一直盯着主人工作</td>
+                        </tr>
+                        <tr>
+                            <td>21:00-21:30</td>
+                            <td>第三次玩。30分钟扔玩具拔河。放饭</td>
+                            <td>晚饭：一勺子粮食+鸡肉、青菜（看下图）等，但粮食之外为粮食的1/3以内。如果没空做人类食物就混一点点零食即可。一般吃完饭要换尿布</td>
+                        </tr>
+                        <tr>
+                            <td>21:30-7：00</td>
+                            <td>大睡特睡！</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- 斗法心得模块 -->
+        <div class="module" id="tips" role="tabpanel" aria-labelledby="tab-tips" hidden><div class="section-heading"><div><span class="eyebrow">THE LITTLE LILA HANDBOOK</span><h2>和Lila大斗法心得</h2></div><span class="section-index">03 / 07</span></div>
+            <div class="module-content">
+                <div class="section-title">🎮 游戏与互动技巧</div>
+                <ul>
+                    <li><strong>固定时间玩耍：</strong>尽量固定时间玩，玩完放饭或者给小零食之后她就会知道游戏结束</li>
+                    <li><strong>玩完不理她：</strong>放完之后就不用理她，不管她如何盯着你们，反正玩完你们就可以无视她去工作啦</li>
+                    <li><strong>游玩技巧：</strong>就算给她几个玩具她也会挑最好捡的叫你们扔。然后她自己捡回来继续扔。一般她会捡回来，但是有时候她看你们扔完也不过去跟她抢她会叫他们过去，你们假装站起来走过去就好。捡完回来可以继续扔或者拿在手上跟她拔河。玩的时候看电视玩手机就好，不用全心全意跟她玩。不知不觉时间就过去啦</li>
+                    <li><strong>适当说No！：</strong>如果看到她一直求玩但已经跟她玩完放饭就跟她说No！如果她只是在旁边趴下或站着，或者没带小玩具找你们的话，应该就是求抱求摸摸。如果你们有时间就可以抱她在大腿上摸她头即可。或者没时间抱她就无视她</li>
+                </ul>
+                
+                <div class="section-title">💡 核心要点</div>
+                <p style="font-size: 1.1em; color: #4f7dff; font-weight: bold;">总之重要就是没空理她时候要说No和无视！</p>
+            </div>
+        </div>
+        
+        <!-- 散步心得模块 -->
+        <div class="module" id="walk" role="tabpanel" aria-labelledby="tab-walk" hidden><div class="section-heading"><div><span class="eyebrow">THE LITTLE LILA HANDBOOK</span><h2>和Lila散步心得</h2></div><span class="section-index">04 / 07</span></div>
+            <div class="module-content">
+                <ul>
+                    <li><strong>出门频率：</strong>她不喜欢出门，她以为外面充满危险。所以平时不用遛她也可。周末可以带她玩1-2次。当然你们喜欢带她出门多一点也是可以，帮她运动</li>
+                    <li><strong>出门前的躲避：</strong>如果她知道要出门会躲起来，并发抖，抓她出来即可。带上出门的袋子</li>
+                    <li><strong>出门前会发抖：</strong>如果发现是准备回家就会不抖了。在外不要给她发抖吓到了，都是演戏</li>
+                    <li><strong>衣服</strong>这个季节不穿衣服也可以啦，但是衣服有防尘效果。漂亮又实用</li>
+                    <li><strong>牵引绳：</strong>你们都用过啦，她的牵引绳可以伸缩，如果是没车地方放长即可，有车还是保持短比较好。牵引绳的胸背如何穿戴看下面的图，穿好要确认下有没有固定好喔</li>
+                    <li><strong>走路方式：</strong>她开始出门有精力时候会拽着你们走，这时候尽量拉短绳子即可。当然大空地就随便放长短。有时候她有她想去的方向，你们不用管，按照你们要去的地方，走拽一下她就行</li>
+                    <li><strong>害怕汽车和摩托车：</strong>她很怕没熄火的汽车、摩托车，特别是搬货的，以为是巨型怪物。然后从很远就会不想走，抱她冲过车即可。或者周围不是马路的话放长绳子，她看你们走远了就会充满勇气跟上</li>
+                    <li><strong>室外饮食：</strong>她在外面不会喝水和吃东西。不过最长8小时不喝水她都可以，所以不用太担心</li>
+                    <li><strong>随地大小便：</strong>如果当天在家拉了💩出门就不拉。尿的话一般会在外面有一次，特别是从室内出来后（至今为止没在咖啡厅尿过应该没事）。屎就用收屎袋收集，尿的话用黄色喷喷喷一下。</li>
+                    <li><strong>咖啡厅的表现：</strong>去到咖啡厅她都会发抖，然后要一起坐凳子。抱她也可，拒绝她也可。反正她发抖就是演戏</li>
+                    <li><strong>疲劳判断：</strong>累了她速度就会变慢，跟着她节奏走也可，或者不想等她抱她走就行</li>
+                    <li><strong>保护她的腿：</strong>尽量不要让她走楼梯，对她腿不好。3-5个左右台阶没所谓，天桥或爬坡之类不要走</li>
+                    <li><strong>回家的速度：</strong>如果接近住的地方她会加速拽着你们回家，就想结束散步马上回家！</li>
+                    <li><strong>回家护理：</strong>回到家用湿巾擦身体。先一张擦脸，然后3-4张擦干净脚脚和身体。（如果觉得麻烦就少出门最好）</li>
+                </ul>
+
+                <div class="equipment-box">
+                    <div class="equipment-item">
+                        <h3>🎾 牵引绳</h3>
+                        <p style="color: #666; margin: 8px 0; font-size: 0.95em;">背部穿戴方式（扣在后面，蓝色在外面）</p>
+                        <img src="pic/2.jpeg" alt="牵引绳背部">
+                    </div>
+                    <div class="equipment-item">
+                        <h3>🎒 外出装备</h3>
+                        <img src="pic/3.jpeg" alt="外出装备" style="margin-bottom: 15px;">
+                        <ul style="text-align: left; margin-top: 15px; list-style: none; padding-left: 0;">
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>①尿布</strong>：基本不用，除非去别人家
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>②喝水</strong>：基本不用，反正她出门不吃不喝。除非要去很远地方备用
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>③捡屎袋</strong>：如果她在外面拉屎了就用这个捡起来。外面是塑料袋，里面是纸袋，捡完屎把纸袋翻过来包好丢掉即可
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>④布垫</strong>：有些餐厅和咖啡厅就算能坐凳子，最好在凳子上铺这个。假装我们没弄脏他们凳子！
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>⑤穿的尿布</strong>：基本不用。除非去别人家怕她尿了不好处理或者怕她尿了别人家地板不好。
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>⑥黄色喷喷</strong>：在外面散步时候，如果她尿在地下，就对着拉的地方喷3-4下就可以了。也可以在家里尿到别地方也可以喷一下，能去除味道。（如果在家尿错一定要抓她去说No！）
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>⑦湿纸巾</strong>：回家后擦身体用的。先一张擦脸，然后3-4张擦脚脚和身体。（如果觉得麻烦就少出门最好）。在家偶尔可以帮她擦脸。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 饮食模块 -->
+        <div class="module" id="diet" role="tabpanel" aria-labelledby="tab-diet" hidden><div class="section-heading"><div><span class="eyebrow">THE LITTLE LILA HANDBOOK</span><h2>关于Lila的饮食</h2></div><span class="section-index">05 / 07</span></div>
+            <div class="module-content">
+                <div class="section-title">🍽️ 一日两餐</div>
+                <ul>
+                    <li><strong>早餐：</strong>两勺粮食加上3-5块鸡肉干，这样就能省时间</li>
+                    <li><strong>晚餐：</strong>一勺粮食，加不超过粮食1/3的人类食物（懒得做不加也可，这时候就加3-5块鸡肉干）</li>
+                    <li><strong>时间：</strong>⏰ 一般是早上9点和晚上9点放饭，但是按照你们时间早上一次，晚上一次即可，隔12小时最好</li>
+                    <li><strong>粮食：</strong>🍜 ROYALCANIN 低分子プロテイン（应该足够了不用担心），如果突然丢了之类在Amazon买ACANA FREE-RUN DUCK</li>
+                    <li><strong>注意事项：</strong>她在我面前一般都会5分钟内全部吃完，但鉴于过去刚出去住时候喜欢搞抑郁绝食或者少吃，一般早上给了饭就放在那就好，她肚子饿了会吃。晚上如果不吃，你们睡前扔掉让她知道不是一直有得吃。</li>
+                </ul>
+                
+                <div class="section-title">🍖 零食规则</div>
+                <ul>
+                    <li><strong>定时给零食：</strong>尽量定时给零食，不要随便给她！</li>
+                    <li><strong>例子：</strong>比方说我就是中午跟她玩20分钟然后才给她当天唯一的零食</li>
+                    <li><strong>份量控制：</strong>零食不能多，一根口香糖加小零食3-5块即可</li>
+                    <li><strong>适度灵活：</strong>当然给多一两次也是可以。但要有规律。不能让她知道随时随地有吃。我已经准备好零食了，你们有别的也可，但记得定时和定量！</li>
+                </ul>
+                
+                <div class="section-title">⭐ 可以吃的人类食物和喜好度（满分3星）</div>
+                <div class="food-list">
+                    <div class="food-item">
+                        <strong>🐔 煮熟鸡胸肉、鸡腿肉</strong>
+                        <p style="color: #ff6b6b;">⭐️⭐️⭐️</p>
+                    </div>
+                    <div class="food-item">
+                        <strong>🥚 鸡蛋黄（1/3鸡蛋黄）</strong>
+                        <p style="color: #ff6b6b;">⭐️⭐️⭐️</p>
+                    </div>
+                    <div class="food-item">
+                        <strong>🥬 水煮青梗菜</strong>
+                        <p style="color: #ff6b6b;">⭐️⭐️⭐️</p>
+                    </div>
+                    <div class="food-item">
+                        <strong>🥗 生紫甘蓝，生包菜</strong>
+                        <p style="color: #ff6b6b;">⭐️⭐️⭐️</p>
+                    </div>
+                    <div class="food-item">
+                        <strong>🍓 草莓</strong>
+                        <p style="color: #ff8c42;">⭐️⭐️</p>
+                    </div>
+                    <div class="food-item">
+                        <strong>🥦 水煮西兰花</strong>
+                        <p style="color: #ff8c42;">⭐️⭐️</p>
+                    </div>
+                    <div class="food-item">
+                        <strong>🥬 水煮白菜</strong>
+                        <p style="color: #ff8c42;">⭐️⭐️</p>
+                    </div>
+                    <div class="food-item">
+                        <strong>🍠 蒸红薯</strong>
+                        <p style="color: #ff8c42;">⭐️⭐️</p>
+                    </div>
+                    <div class="food-item">
+                        <strong>🍎 苹果</strong>
+                        <p style="color: #fdb833;">⭐️</p>
+                    </div>
+                        <div class="food-item">
+                        <strong>🫐 蓝莓</strong>
+                        <p style="color: #fdb833;">⭐️</p>
+                    </div>
+                </div>
+
+                <div class="warning">
+                    <strong>🥣 洗碗换水</strong>
+                    <p>3天换一次水和洗碗就好。记得不能用洗洁精，用清水冲洗即可</p>
+                </div>
+                <div class="warning">
+                    <strong>❌ 千万不能吃的食物</strong>
+                    <p>巧克力、葡萄、牛油果、核桃、柠檬等。上面没有的食物也最好查一下再给她</p>
+                </div>
+                
+                <div class="warning">
+                    <strong>⚠️ 如果她没习惯，搞抑郁不想吃粮食</strong>
+                    <ul style="margin-top: 10px;">
+                        <li>鸡蛋黄弄碎混到粮食里</li>
+                        <li>把churu混到粮食里，再加点零食，好吃的人类食物勾引她吃</li>
+                        <li>3天完全不吃去医院吧！（上次在你们家都吃了应该没问题，而且零食肯定能勾引她吃）</li>
+                    </ul>
+                </div>
+
+                <div class="equipment-box">
+                    <div class="equipment-item">
+                        <h3>🍽️ 人类食物比例（😢可怜那么少）</h3>
+                        <img src="pic/4.jpeg" alt="人类食物比例">
+                    </div>
+                    <div class="equipment-item">
+                        <h3>🍖 零食介绍</h3>
+                        <img src="pic/5.jpeg" alt="零食介绍" style="margin-bottom: 15px;">
+                        <ul style="text-align: left; margin-top: 15px; list-style: none; padding-left: 0;">
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>①牛皮糖</strong>：1根/次，一周1～2根。一般她吃这个很花时间吃完就累了。但给完之后一定要在家看她吃完，怕她喉咙被卡住（虽然没试过）
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>②口香糖</strong>：1根/次， 1天1～2根。对清洁牙齿有用的小零食，我一般中午玩完就给她。
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>③鹿肉</strong>：（可选择）和饭一起放一次2根。和鸡肉干效果一样，不给鸡肉干给这个也可以，一次2根最后掰成小颗放她饭里。有人类食物时候就不用给拉
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>④小零食</strong>：3-5块/次，玩完给她吃就行。一天不要超过10块！
+                            </li>
+                            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                                <span style="position: absolute; left: 0;">🐾</span>
+                                <strong>⑤鸡肉干</strong>：和饭一起放一次3-5块。她喜欢吃鸡肉干，和饭一起放在碗里就好。有人类食物时候就不用给拉
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 备注模块 -->
+        <div class="module" id="notes" role="tabpanel" aria-labelledby="tab-notes" hidden><div class="section-heading"><div><span class="eyebrow">THE LITTLE LILA HANDBOOK</span><h2>📒 备注</h2></div><span class="section-index">06 / 07</span></div>
+            <div class="module-content">
+                <div class="warning">
+                    <strong>🏥 当她生病时：</strong>
+                    <p>如果她拉肚子、吐了之类的，又不玩了，这种情况持续两天以上就去医院，她有保险，任何一家医院都可。钱多少不用管，先帮我给喔。（一般会玩就没事，最多搞抑郁而已）</p>
+                </div>
+                <div class="warning">
+                    <strong>😴 睡醒没精神：</strong>
+                    <p>她去年有两次睡醒当天没精神，碰她一下她就叫。这应该是神经痛，或者睡觉压到了。如果她玩吃喝拉都没问题，那就无视。上次也检查不出什么，第二天就变回动力模式。</p>
+                </div>
+                <div class="warning">
+                    <strong>🎒 背包：</strong>
+                    <p>如果带背包带她出门时候，为她安全还是尽量穿上牵引绳那个胸背，然后把包里面的扣子扣上</p>
+                </div>
+                <div class="warning">
+                    <strong>💩 便便问题：</strong>
+                    <p>她一般一天拉一次，大多数发生在早上吃完饭。如果没有就大概率在中午吃完零食或者晚上吃饭。如果早上没拉屎又出去玩，那大概率会在外面拉。如果她吃了东西肚子不适应的话，便便就会有点湿，所以有一点点几率会粘毛上（但最近才剪毛这种几率很低很低很低！）。这时候需要用干纸巾清理大部分后再用湿纸巾擦干净。或者直接点，用干纸巾擦完粪便后，用温水（40度左右）花洒冲洗屁股，然后用毛巾擦拭，吹风筒吹干。</p>
+                </div>                
+                <div class="warning">
+                    <strong>🛀 万一要洗澡：</strong>
+                    <p>上面不小心粘到便便可以简单冲洗屁股。如果你们觉得她出去玩脏了要洗澡就全身冲洗，她估计就是一开始发抖，看结束就不发抖了（都是装的发抖）。然后洗完用毛巾擦干。然后吹干。如果觉得麻烦可以出去洗，到时候告诉我花了多少即可。</p>
+                </div>
+                <div class="warning">
+                    <strong>🔔 门铃的反应</strong>
+                    <p>感觉她已经习惯了门铃响了就会有人这件事，所以门铃响她就很兴奋。这时候尽量无视她就好。然后拿快递时候关上玄关门，不给她冲去撩别人！</p>
+                </div>
+                <div class="warning">
+                    <strong>🚽 有时候怕厕所（很久很久以前）</strong>
+                    <p>有时候她自己不小心拉尿时候她的爪碰撞到厕所她会觉得这声音受不了就不敢上厕所。现在基本脱敏了，万一有这种现象的话你们就按照之前把尿布放地下吧</p>
+                </div>
+                <div class="warning">
+                    <strong>😠 对她树立威严</strong>
+                    <p>她做错的话（比方说尿错）就把她拉到角落叫她Sit，然后拉高音调跟她说话，然后她估计知道自己错了。一般的话她会一直坐那不敢动，如果动了就说No！直到跑过去叫她shake她就懂可以动了（上次那样尿地毯就抓她来指着问她这是什么！然后让她在角落反省）</p>
+                </div>
+                <div class="warning">
+                    <strong>🏨 酒店：</strong>
+                    <p>如果实在有事要她住酒店，随便一家都可以，贵一点也可，带上她的疫苗证明和粮食。送她去她经常去的酒店的话就最好，跟他们说Lila就知道啦，带上她粮食！📍POOCHIES 电话：03-6421-7039</p>
+                </div>
+                    <div class="warning">
+                    <strong>🏥 医院：</strong>
+                    <p>附近医院即可啦，反正她有保险没所谓，带上她的疫苗证明。紧急情况可以咨询她也不怎么去的医院：📍ペット家族動物病院　西五反田 03-3495-0171。晚上深夜突发事件可以找 📍港区動物救急医療センター 芝アニマルクリニック 03-6432-4622（完全没找过，不用紧张，只是以防万一）</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <section class="module" id="exam" role="tabpanel" aria-labelledby="tab-exam" hidden>
+            <div class="section-heading"><div><span class="eyebrow">HOW WELL DO YOU KNOW ME?</span><h2>Lila 认定考试</h2></div><span class="section-index">07 / 07</span></div>
+            <div class="module-content exam-shell" id="quiz-stage">
+                <div class="exam-welcome">
+                    <span class="card-label">THE OFFICIAL LITTLE BESTIE TEST</span>
+                    <div class="exam-mascot"><img src="pic/logo.PNG" alt="Lila" width="90" height="90"><span>懂我，才算好朋友 ♡</span></div>
+                    <h3>你有多了解 Lila？</h3><p>读完生活指南，来接受这位小朋友的可爱考验。</p>
+                    <div class="exam-rules"><div><strong>30<span>题</span></strong><span>专属题库</span></div><div><strong>10<span>题</span></strong><span>每次随机抽取</span></div><div><strong>8<span>分</span></strong><span>即可合格</span></div></div>
+                    <p class="exam-instructions">单选题 · 每题 1 分 · 不限时<br>交卷后可查看答案和解析，也可以重新抽题挑战。</p>
+                    <button type="button" class="primary-btn" id="exam-start">开始认定考试 ↗</button>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    </main>
+    <footer class="footer"><a class="brand" href="#intro">lila.</a><p>认真生活，可爱是日常。<span>Made with love & little paw prints.</span></p><a href="#top" aria-label="回到顶部">回到顶部 ↑</a></footer>
+</div>
+<aside class="secret-toast" id="secret-toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+    <img src="pic/logo.PNG" alt="" width="48" height="48">
+    <div><span class="card-label">P.S. A LITTLE LILA SECRET</span><p id="lila-fact"></p></div>
+    <span class="toast-star" aria-hidden="true">✦</span>
+</aside>
+</body>
+</html>
